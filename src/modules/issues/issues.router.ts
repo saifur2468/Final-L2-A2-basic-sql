@@ -6,15 +6,15 @@ import {
     getSingleIssue,
     updateIssue,
     deleteIssue
-} from './issues.controller';
+} from './issues.controller.js';
 
 import {
     authenticate,
     authorize
-} from '../../middleware/auth.middleware';
+} from '../../middleware/auth.middleware.js';
 
 import { validateIssue }
-    from '../../middleware/validate.middleware';
+    from '../../middleware/validate.middleware.js';
 
 const router = Router();
 

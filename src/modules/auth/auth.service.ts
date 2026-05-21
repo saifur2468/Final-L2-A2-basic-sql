@@ -1,7 +1,7 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { pool } from '../../config/databese';
-import { AppError } from '../../utils/apperror';
+import { pool } from '../../config/databese.js';
+import { AppError } from '../../utils/apperror.js';
 
 export const registerUser = async (body: any) => {
   const { name, email, password, role = 'contributor' } = body;

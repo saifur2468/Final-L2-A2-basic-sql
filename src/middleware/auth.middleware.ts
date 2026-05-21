@@ -4,7 +4,7 @@ import type {
   NextFunction,
 } from "express";
 import jwt from "jsonwebtoken";
-import { AppError } from "../utils/apperror";
+import { AppError } from "../utils/apperror.js";
 
 
 export interface TJwtPayload {

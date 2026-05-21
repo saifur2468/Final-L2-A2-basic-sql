@@ -3,8 +3,8 @@ import type {
   Response,
   NextFunction,
 } from "express";
-import * as issuesService from './issues.service';
-import { sendSuccess, sendDataOnly } from '../../utils/response';
+import * as issuesService from './issues.service.js';
+import { sendSuccess, sendDataOnly } from '../../utils/response.js';
 
 export const createIssue = async (req: Request, res: Response, next: NextFunction) => {
   try {

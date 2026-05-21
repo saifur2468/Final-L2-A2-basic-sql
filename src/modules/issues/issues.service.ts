@@ -1,5 +1,5 @@
-import { pool } from '../../config/databese';
-import { AppError } from '../../utils/apperror';
+import { pool } from '../../config/databese.js';
+import { AppError } from '../../utils/apperror.js';
 
 export const createNewIssue = async (body: any, reporterId: number) => {
   const { title, description, type } = body;

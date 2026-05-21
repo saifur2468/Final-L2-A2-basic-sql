@@ -5,7 +5,7 @@ import type {
   Response,
   NextFunction,
 } from "express";
-import { AppError } from '../utils/apperror';
+import { AppError } from '../utils/apperror.js';
 
 export const validateSignup = (req: Request, res: Response, next: NextFunction) => {
   const { name, email, password, role } = req.body;
