@@ -1,7 +1,9 @@
 import express, {
   type Application
 } from 'express';
+
 import 'dotenv/config';
+
 import cors from 'cors';
 
 import authRouter
@@ -20,10 +22,15 @@ app.use(cors());
 app.use(express.json());
 
 
+//  Root Route
+app.get('/', (req, res) => {
+  res.send('DevPulse API Running ');
+});
+
+
 app.use('/api/auth', authRouter);
 
 app.use('/api/issues', issuesRouter);
-
 
 app.use(errorHandler);
 
