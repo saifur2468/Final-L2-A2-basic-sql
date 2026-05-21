@@ -46,9 +46,10 @@ export const authenticate = (
     }
 
    
-    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    // const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
-   
+  const decoded = jwt.verify(token as string, process.env.JWT_SECRET as string);
+  
     req.user = (decoded as unknown) as TJwtPayload;
 
     next();
