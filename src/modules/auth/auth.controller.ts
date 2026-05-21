@@ -1,8 +1,8 @@
 import type { Request, Response, NextFunction } from "express";
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import { pool } from '../../config/databese'; 
-import { AppError } from '../../utils/apperror';
+import { pool } from '../../config/databese.js'; 
+import { AppError } from '../../utils/apperror.js';
 
 
 export const signup = async (req: Request, res: Response, next: NextFunction) => {

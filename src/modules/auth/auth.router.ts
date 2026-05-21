@@ -10,11 +10,11 @@
 // export default router;
 
 import { Router } from 'express';
-import { signup, login } from './auth.controller'; // নামগুলো চেক করুন
+import { signup, login } from './auth.controller.js'; 
 
 const router = Router();
 
-// এখানে চেক করুন signup বা login বানানে ভুল আছে কি না
+
 router.post('/signup', signup); 
 router.post('/login', login);
 

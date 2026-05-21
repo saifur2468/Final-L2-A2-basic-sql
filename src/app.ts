@@ -5,13 +5,13 @@ import 'dotenv/config';
 import cors from 'cors';
 
 import authRouter
-from './modules/auth/auth.router';
+from './modules/auth/auth.router.js';
 
 import issuesRouter
-from './modules/issues/issues.router';
+from './modules/issues/issues.router.js';
 
 import { errorHandler }
-from './middleware/error.middleware';
+from './middleware/error.middleware.js';
 
 const app: Application = express();
 

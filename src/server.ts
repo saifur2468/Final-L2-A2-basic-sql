@@ -1,6 +1,7 @@
 
 
-import app from './app';
+// import app from './app';
+import app from './app.js';
 import { pool } from './config/databese';
 
 const PORT = process.env.PORT || 5000;
