@@ -5,7 +5,7 @@ A backend system for managing software issues (bugs & feature requests) with rol
 ## 📌 Live Links
 🔗 Backend API: https://your-deployment-url.com
 🔗 GitHub Repository: https://github.com/saifur2468/L2-A2-basic-sql/tree/main
-🎥 Interview Video: https://your-video-link.com
+🎥 Interview Video:https://drive.google.com/file/d/1QNeVTE8xvOJn5o5RtWx7fqCRoSqI3qUP/view?usp=drive_link
  ## 🛠️ Tech Stack
 Node.js (LTS)
 TypeScript
