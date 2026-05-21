@@ -1,7 +1,7 @@
 import express, {
   type Application
 } from 'express';
-
+import 'dotenv/config';
 import cors from 'cors';
 
 import authRouter
